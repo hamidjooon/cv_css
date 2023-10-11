@@ -1,0 +1,24 @@
+<nav>
+    <!-- Header content, e.g., navigation menu, logo, etc. -->
+    <ul>
+        <li><a href="/">Home</a></li>
+       {{#if isAuthenticated }}
+        <li><a href="/about">About</a></li>
+        {{/if}}
+        <li><a href="/contact">Contact</a></li>
+        
+        
+        {{!-- todo move to right --}}
+        {{#if isAuthenticated }}
+            <li><a href="/profile">Profile</a></li>
+            {{#if isAdmin }}
+                <li><a href="/register">Register a user</a></li>
+            {{/if}}
+            <li><a href="/logout">Logout</a></li>
+        {{else}}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        {{/if}}
+
+    </ul>
+</nav>

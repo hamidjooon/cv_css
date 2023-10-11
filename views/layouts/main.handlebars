@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary CSS and scripts here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/spectre1.css">
+    <link rel="stylesheet" href="/css/icon.css">
+</head>
+<body>
+    <header>
+        <!-- Include header content here -->
+        {{> header}}
+    </header>
+
+   <main>
+         <!-- Include the content of individual pages here -->
+        {{{ body }}}
+    </main>
+
+    <footer>
+        <!-- Include footer content here -->
+        {{> footer}}
+    </footer>
+    <script src="/js/education.js"></script>
+    <script src="/js/work.js"></script>
+
+</body>
+</html>

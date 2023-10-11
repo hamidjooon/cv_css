@@ -1,0 +1,27 @@
+{
+  "name": "cv-website",
+  "version": "1.0.0",
+  "description": "this is a website for user cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/somsha/CV-website.git"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "Somayeh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.8",
+    "sqlite3": "^5.1.6"
+  }
+}

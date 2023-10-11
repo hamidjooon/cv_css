@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-color: bisque;
+
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav li {
+    margin-right: 15px; 
+}
+
+
+nav li a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+
+nav li a:hover {
+    text-decoration: underline; 
+}
+
+
+main {
+    flex: 1; 
+    padding: 10px;
+    background-color: bisque;
+}
+
+
+footer {
+    background-color: #333; 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.my-avatar{
+    margin-top: 30px;
+  }
+.my-accordion{
+    background-color:#ADC4CE;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 15px 0px 15px 0px;
+    border: 2px solid beige;
+}
+
+img {
+    width: 180px;
+    height: 200px;
+    border-radius: 100px;  
+}
+
+.phone {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.email {
+    margin-top: 30px;
+    font-size: 20px;   
+}
+
+.email a{
+    color: black;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.Address {
+    margin-top: 30px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 20px;
+}
+
+.social{
+    margin-top: 10px;
+}
+
+.social img{
+    background-color: #ADC4CE;
+}
+
+.social img:hover{
+    background-color: rgb(125, 173, 193);
+    
+}
+
+.login-card {
+    width: 400px;
+    margin: 50px auto;
+
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    border-radius: 5px ;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.cv{
+    width: 90%;
+    margin: 50px auto;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    border-radius: 5px ;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+

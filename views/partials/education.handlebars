@@ -1,0 +1,38 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th >Institution</th>
+            <th>Degree</th>
+            <th>Major</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each education}}
+        <tr >
+            <td>{{this.institution}}</td>
+            <td>{{this.degree}}</td>
+            <td>{{this.major}}</td>
+            <td>{{this.startDate}}</td>
+            <td>{{this.endDate}}</td>
+            <td>
+                <form action="/cv/education/remove" method="post">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <button class="btn btn-error" type="submit">Remove</button>
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+        <!-- Empty row for adding new education -->
+        <tr class="education-row">
+            <td><input  type="text" class="form-input" placeholder="Institution" name="educationInstitution" required></td>
+            <td><input  type="text" class="form-input" placeholder="Degree" name="educationDegree" required></td>
+            <td><input  type="text" class="form-input" placeholder="Major" name="educationMajor" required></td>
+            <td><input  type="date" class="form-input" placeholder="Start Date" name="educationStartDate" required></td>
+            <td><input  type="date" class="form-input" placeholder="End Date" name="educationEndDate" required></td>
+            <td><button type="submit" class="btn btn-success"  id="addEducationButton">Add</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,28 @@
+<section class="login-card">
+    <h2>Create an Account</h2>
+
+    <form class="form-group " action="/register" method="POST">
+        <div class="form-group">
+            <label class="form-label"  for="username">Username:</label>
+            <input class="form-input" type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="password">Password:</label>
+            <input class="form-input" type="password" id="password" name="password" required>
+        </div>
+        {{#if isAdmin }}
+        <div class="form-group">
+            <label class="form-label"  for="role">Role:</label>
+            <select class="form-select " style="color:black" id="role" name="role" required>
+                <option value="ROLE_USER" >User</option>
+                <option value="ROLE_ADMIN">Admin</option>
+            </select>
+        </div>
+
+        
+        {{/if}}
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+
+</section>
+
